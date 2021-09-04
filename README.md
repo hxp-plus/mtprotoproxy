@@ -32,3 +32,11 @@ The proxy can be launched:
 - several times, clients will be automaticaly balanced between instances
 - with uvloop module to get an extra speed boost
 - with runtime statistics exported to [Prometheus](https://prometheus.io/)
+
+## Tips
+
+To generate random 32 digits hes string:
+
+```bash
+hexdump -n 32 -e '4/4 "%08X" 1 "\n"' /dev/urandom
+```
