@@ -38,5 +38,7 @@ The proxy can be launched:
 To generate random 32 digits hes string:
 
 ```bash
-hexdump -n 32 -e '4/4 "%08X" 1 "\n"' /dev/urandom
+hexdump -n 16 -e '4/4 "%08X" 1 "\n"' /dev/urandom
 ```
+
+<https://stackoverflow.com/questions/34328759/how-to-get-a-random-string-of-32-hexadecimal-digits-through-command-line/34329057>
